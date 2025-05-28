@@ -6,7 +6,7 @@ import classNames from "classnames";
 
 const Gallery = (props) => {
   const {
-    imagesArr,
+    imagesArr = [{ src: "", alt: "" }],
     description = "",
     isShowVideo = false,
     videoFile = "",
@@ -64,7 +64,7 @@ const Gallery = (props) => {
   });
 
   return (
-    <div className="hvr" style={{width:maxWidth}}>
+    <div className="hvr" style={{ width: maxWidth }}>
       <div className="hvr__images">
         <div
           className="img-container img-size-100"
