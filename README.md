@@ -21,7 +21,7 @@ yarn add react-preview-gallery
 
 ## Quick start 🚀
 
-### Only images 🖼️
+### 🖼️ Only images 
 ```jsx
 import Gallery from 'your-package-name';
 
@@ -41,7 +41,7 @@ function App() {
   );
 }
 ```
-### With video 🎥
+### 🎥 With video 
 
 ```jsx
 <Gallery
