@@ -23,7 +23,8 @@ yarn add react-preview-gallery
 
 ### 🖼️ Only images 
 ```jsx
-import Gallery from 'your-package-name';
+import Gallery from "react-preview-gallery";
+import "react-preview-gallery/style.css";
 
 const images = [
   { src: "image1.jpg", alt: "Description 1" },
