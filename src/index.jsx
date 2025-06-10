@@ -28,8 +28,8 @@ const Gallery = (props) => {
         src={image.src}
         alt={image.alt}
         itemProp="image"
-        className={classNames(`img-fluid-y`, {
-          collapse: index !== activeElement,
+        className={classNames(`react-preview-gallery__img`, {
+          "react-preview-gallery-collapse": index !== activeElement,
         })}
       />
     );
@@ -46,7 +46,7 @@ const Gallery = (props) => {
   let sectors = imagesArr.map((image, index) => {
     return (
       <div
-        className={`hvr__sector`}
+        className={`react-preview-gallery__sector`}
         onMouseOver={() => {
           setActiveElement(index);
         }}
@@ -57,17 +57,19 @@ const Gallery = (props) => {
   let dots = imagesArr.map((image, index) => {
     return (
       <div
-        className={`hvr__dot${index === activeElement ? "--active" : ""}`}
+        className={`react-preview-gallery__dot${
+          index === activeElement ? "--active" : ""
+        }`}
         key={index}
       ></div>
     );
   });
 
   return (
-    <div className="hvr" style={{ width: maxWidth }}>
-      <div className="hvr__images">
+    <div className="react-preview-gallery" style={{ width: maxWidth }}>
+      <div className="react-preview-gallery__images">
         <div
-          className="img-container img-size-100"
+          className="react-preview-gallery-container react-preview-gallery__size-100"
           style={{ width: maxWidth, height: maxHeight }}
         >
           {productImages}
@@ -75,7 +77,7 @@ const Gallery = (props) => {
         </div>
         {minLength && isEmptyVideo && (
           <div
-            className={`hvr__sectors ${sectorsClassName}`}
+            className={`react-preview-gallery__sectors ${sectorsClassName}`}
             onMouseOut={() => {
               if (window.matchMedia("(max-width: 768px)").matches) {
                 return;
@@ -125,7 +127,9 @@ const Gallery = (props) => {
         )}
       </div>
       {minLength && isEmptyVideo && (
-        <div className={`hvr__dots ${dotsClassName}`}>{dots}</div>
+        <div className={`react-preview-gallery__dots ${dotsClassName}`}>
+          {dots}
+        </div>
       )}
     </div>
   );

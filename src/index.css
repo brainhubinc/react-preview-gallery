@@ -1,7 +1,7 @@
-.hvr__images {
+.react-preview-gallery__images {
   position: relative;
 }
-.hvr__sectors {
+.react-preview-gallery__sectors {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,45 +9,45 @@
   bottom: 0;
   display: flex;
 }
-.hvr__sector {
+.react-preview-gallery__sector {
   flex-grow: 1;
 }
 @media (max-width: 768px) {
-  .hvr__sector {
+  .react-preview-gallery__sector {
     pointer-events: none;
   }
 }
-.hvr__dots {
+.react-preview-gallery__dots {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
-.hvr__dot {
+.react-preview-gallery__dot {
   flex-grow: 1;
   height: 2px;
   margin: 10px 2px 0;
   background: #d6dbe0;
 }
-.hvr__dot--active {
+.react-preview-gallery__dot--active {
   flex-grow: 1;
   height: 2px;
   margin: 10px 2px 0;
   background: #ff2a2c;
 }
-.collapse {
+.react-preview-gallery-collapse {
   display: none;
 }
-.collapse.in {
+.react-preview-gallery-collapse.in {
   display: block;
 }
-.img-container {
+.react-preview-gallery-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.img-size-100 {
+.react-preview-gallery__size-100 {
   margin: 0 auto;
   overflow: hidden;
   position: relative;
