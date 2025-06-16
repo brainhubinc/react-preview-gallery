@@ -1,5 +1,8 @@
 # 🖼️  react-preview-gallery
 
+[![npm](https://img.shields.io/npm/v/react-preview-gallery)](https://www.npmjs.com/package/react-preview-gallery)
+[![downloads](https://img.shields.io/npm/dt/react-preview-gallery)](https://www.npmjs.com/package/react-preview-gallery)
+
 A responsive and touch-friendly gallery component for React with image/video support and interactive navigation.
 
 ## Features ✨
