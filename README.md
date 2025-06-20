@@ -39,8 +39,6 @@ function App() {
     <Gallery 
       imagesArr={images}
       description="product name"
-      maxWidth="300px"
-      maxHeight="300px"
     />
   );
 }
@@ -65,8 +63,6 @@ function App() {
 | `videoFile`        | String   | `""`      | Video source URL                            |
 | `dotsClassName`    | String   | `""`      | Custom class for navigation dots            |
 | `sectorsClassName` | String   | `""`      | Custom class for hover sectors              |
-| `maxWidth`         | String   | `"250px"` | Maximum width of gallery                    |
-| `maxHeight`        | String   | `"250px"` | Maximum height of gallery                   |
 
 ## License 📄
 MIT © [Kostya Skakodub]
