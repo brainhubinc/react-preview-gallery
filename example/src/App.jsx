@@ -4,7 +4,6 @@ import "react-preview-gallery/style.css";
 
 function App() {
   const imgArr = [
-    { src: "../images/black-max-watch.jpeg", alt: "max watch" },
     { src: "../images/black-watch.jpeg", alt: "black watch" },
     { src: "../images/blue-watch.jpeg", alt: "blue watch" },
     { src: "../images/white-watch.jpeg", alt: "white watch" },
@@ -14,6 +13,8 @@ function App() {
   return (
     <div
       style={{
+        width: "350px",
+        height: "350px",
         padding: "20px",
         margin: "0 auto",
       }}
@@ -25,7 +26,7 @@ function App() {
           isShowVideo={isShowVideo}
           videoFile={"../images/apple-watch.mp4"}
         />
-         <button
+        <button
           style={{
             border: "0px",
             width: "100px",

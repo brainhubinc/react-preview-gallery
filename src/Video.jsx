@@ -1,23 +1,30 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from "react";
 
 export const Video = ({ image, videoProps }) => {
-  const videoRef = useRef()
+  const videoRef = useRef();
 
   useEffect(() => {
-    videoRef.current?.load()
-  }, [image.original])
+    videoRef.current?.load();
+  }, [image.original]);
 
   return (
-    <video autoPlay playsInline muted loop preload="none" {...videoProps}>
+    <video
+      autoPlay
+      playsInline
+      muted
+      loop
+      preload="none"
+      className="react-preview-gallery__video"
+    >
       <source
         src={image.original}
         type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
       />
-      <span>The video tag is not supported by your browser.</span>{' '}
+      <span>The video tag is not supported by your browser.</span>{" "}
       <a href={image.original}>
         <span>Download video</span>
       </a>
       .
     </video>
-  )
-}
+  );
+};

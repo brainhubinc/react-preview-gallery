@@ -2,7 +2,6 @@ import "./index.css";
 import React, { useState } from "react";
 import LazyImage from "./LazyImage";
 import { Video } from "./Video";
-import classNames from "classnames";
 
 const Gallery = (props) => {
   const {
@@ -12,8 +11,6 @@ const Gallery = (props) => {
     videoFile = "",
     dotsClassName = "",
     sectorsClassName = "",
-    maxWidth = "250px",
-    maxHeight = "250px",
   } = props;
 
   const [activeElement, setActiveElement] = useState(0);
@@ -28,16 +25,14 @@ const Gallery = (props) => {
         src={image.src}
         alt={image.alt}
         itemProp="image"
-        className={classNames(`react-preview-gallery__img`, {
-          "react-preview-gallery-collapse": index !== activeElement,
-        })}
+        className={"react-preview-gallery__img" + (index !== activeElement ? " react-preview-gallery-collapse" : "")}
       />
     );
   });
   if (isShowVideo) {
     if (videoFile) {
       productImages = (
-        <Video image={{ original: videoFile }} videoProps={{ width: "100%" }} />
+        <Video image={{ original: videoFile }} />
       );
       isEmptyVideo = false;
     }
@@ -66,11 +61,10 @@ const Gallery = (props) => {
   });
 
   return (
-    <div className="react-preview-gallery" style={{ width: maxWidth }}>
+    <div className="react-preview-gallery">
       <div className="react-preview-gallery__images">
         <div
           className="react-preview-gallery-container react-preview-gallery__size-100"
-          style={{ width: maxWidth, height: maxHeight }}
         >
           {productImages}
           {description && <meta itemProp="description" content={description} />}
