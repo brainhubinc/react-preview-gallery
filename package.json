@@ -43,10 +43,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brainhubinc/react-range-slider-advanced.git"
+    "url": "git+https://github.com/brainhubinc/react-preview-gallery.git"
   },
   "bugs": {
-    "url": "https://github.com/brainhubinc/react-range-slider-advanced/issues"
+    "url": "https://github.com/brainhubinc/react-preview-gallery/issues"
   },
-  "homepage": "https://github.com/brainhubinc/react-range-slider-advanced#readme"
+  "homepage": "https://github.com/brainhubinc/react-preview-gallery#readme"
 }
