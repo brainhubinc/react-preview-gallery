@@ -3,6 +3,7 @@
 [![npm](https://img.shields.io/npm/v/react-preview-gallery)](https://www.npmjs.com/package/react-preview-gallery)
 [![downloads](https://img.shields.io/npm/dt/react-preview-gallery)](https://www.npmjs.com/package/react-preview-gallery)
 
+<p><img src="https://github.com/user-attachments/assets/a46db743-76f8-4fc5-976c-0c6cf74a28e7" width="900"></p>
 A responsive and touch-friendly gallery component for React with image/video support and interactive navigation.
 
 ## Features ✨
