@@ -1,6 +1,6 @@
 {
   "name": "react-preview-gallery",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An advanced range slider component for React",
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
